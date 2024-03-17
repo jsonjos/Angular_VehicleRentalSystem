@@ -1,0 +1,64 @@
+<br>
+<br>
+<!-- <div class="mb-3">
+    <label for="location" class="form-label">Enter location:</label>
+    <input type="text" class="form-control" id="location" name="location" placeholder="Enter the location" [(ngModel)]="location">
+</div> -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                 <div class="card-body">
+                   <form>
+                        <div class="mb-3" >
+                            <label for="name" class="form-label" style="padding-left: 200px;" >Choose a location:</label>
+                            <br>
+                            <br>
+                            <!-- <input type="text" class="form-control" id="location" name="location" placeholder="Enter the location" [(ngModel)]="location"> -->
+                            <select id="location" name="location" [(ngModel)]="location">
+                                <!-- <option selected>Choose</option> -->
+                                <option>Chennai</option>
+                                <option>Coimbatore</option>
+                                <option>Bangalore</option>
+                            </select>
+                        </div>
+                        <div class="mb-3" style="padding-left: 200px;">
+                            <button type="submit" class="btn btn-info" (click)="view()">Get</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- routerLink="login/customer" -->
+<br/>
+<br/>
+<div class="container mt-5">
+    <table *ngIf="vehiclelist.length>0" class="table">
+        <thead>
+            <tr>
+                <th>Vehicle Id</th>
+                <th>Model Name</th>
+                <th>Model Year</th>
+                <th>Availability</th>
+                <th>Location</th>
+                <th>Rent</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of vehiclelist">
+                <td>{{vehicle.vehicleId}}</td>
+                <td>{{vehicle.modelName}}</td>
+                <td>{{vehicle.modelYear}}</td>
+                <td>{{vehicle.isAvailable}}</td>
+                <td>{{vehicle.vehicleLocation}}</td>
+                <td>{{vehicle.rent}}</td> 
+                <td><button class="btn btn-primary">Book</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

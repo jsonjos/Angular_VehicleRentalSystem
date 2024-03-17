@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   loginCustomer:LoginCustomer=new LoginCustomer();
+  alertService: any;
   constructor(private customerService:CustomerService,private router:Router){}
   login(){
   this.customerService.loginCustomer(this.loginCustomer).subscribe(
@@ -21,6 +22,8 @@ export class LoginComponent {
       },
       error:(err) => {
         console.log(err);
+        alert(err.error);
+
       },
       complete:()=>{
         console.log("completed successfully");

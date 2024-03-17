@@ -21,6 +21,8 @@ this.customerService.registerCustomer(this.newCustomer).subscribe(
     },
     error:(err) => {
       console.log(err);
+      alert(err.error);
+
     }
   }
 );

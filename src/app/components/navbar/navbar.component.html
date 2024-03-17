@@ -1,24 +1,51 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
     <a class="navbar-brand" href="#">
         <img src="favicon.ico" alt="Bootstrap" width="30" height="24">
     </a>
-    <a class="navbar-brand" href="#">FindARide</a>
+    <a class="navbar-brand" routerLink="home" style="color: black; text-align: center;">FindARide</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Right-aligned items -->
+        Right-aligned items
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" routerLink="login/customer">
-                <a class="nav-link">Login</a>
+                <a class="nav-link">LOGIN</a>
             </li>
             <li class="nav-item" routerLink="register/customer">
-                <div class="nav-link" >Register</div>
+                <div class="nav-link" >REGISTER</div>
             </li>
         </ul>
     </div>
-</nav>
+</nav> -->
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="home">Home</a></li>
+      </ul>
+      <div class="navbar-header">
+        <a class="navbar-brand" style="color: aliceblue; font-size:xx-large; font-family: 'Times New Roman', Times, serif;">Find A Ride</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="landing/customer"> Customer Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="register/customer"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="login/customer"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
   <router-outlet/>
+</body>
 
 
 
