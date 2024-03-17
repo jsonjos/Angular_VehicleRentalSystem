@@ -12,6 +12,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CustomerlandingComponent } from './components/customerlanding/customerlanding.component';
+import { ActiveVehiclesComponent } from './components/active-vehicles/active-vehicles.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { CustomerlandingComponent } from './components/customerlanding/customerl
     NavbarComponent,
     FooterComponent,
     CarouselComponent,
-    CustomerlandingComponent
+    CustomerlandingComponent,
+    ActiveVehiclesComponent
   ],
   imports: [
     BrowserModule,
