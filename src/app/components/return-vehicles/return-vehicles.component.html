@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body">
+        <form>
+            <div class="form-group row">
+                <label for="vehicleLocation" class="col-sm-2 col-form-label">Select City:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" name="vehicleLocation" id="vehicleLocation" [(ngModel)]="vehicleReturn.vehicleLocation">
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="vehicleId" class="col-sm-2 col-form-label">Enter Vehical ID</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="vehicleId" id="vehicleId" placeholder="Enter vehicleId" [(ngModel)]="vehicleReturn.vehicleId" >
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="returnVeh()">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
