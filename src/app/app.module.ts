@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -13,6 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CustomerlandingComponent } from './components/customerlanding/customerlanding.component';
 import { ActiveVehiclesComponent } from './components/active-vehicles/active-vehicles.component';
+import { BookingComponent } from './components/booking/booking.component';
+import { ReturnVehiclesComponent } from './components/return-vehicles/return-vehicles.component';
 
 
 
@@ -25,7 +26,9 @@ import { ActiveVehiclesComponent } from './components/active-vehicles/active-veh
     FooterComponent,
     CarouselComponent,
     CustomerlandingComponent,
-    ActiveVehiclesComponent
+    ActiveVehiclesComponent,
+    BookingComponent,
+    ReturnVehiclesComponent
   ],
   imports: [
     BrowserModule,

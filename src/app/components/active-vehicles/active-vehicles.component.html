@@ -57,7 +57,7 @@
                 <td>{{vehicle.isAvailable}}</td>
                 <td>{{vehicle.vehicleLocation}}</td>
                 <td>{{vehicle.rent}}</td> 
-                <td><button class="btn btn-primary">Book</button></td>
+                <td><button class="btn btn-primary" (click)="book(vehicle.vehicleId)">Book</button></td>
             </tr>
         </tbody>
     </table>
