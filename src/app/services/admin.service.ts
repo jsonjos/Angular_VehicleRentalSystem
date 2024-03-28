@@ -19,8 +19,8 @@ export class AdminService {
     return this.httpClient.post<Customer>('http://localhost:8080/home/customer/add', customer);
   }
 
-  updateCustomer(customer: Customer): Observable<Customer> {
-    return this.httpClient.put<Customer>('http://localhost:8080/home/customer/update', customer);
+  updateCustomer(customer: Customer): Observable<any> {
+    return this.httpClient.put('http://localhost:8080/home/customer/update', customer, { responseType: 'text' });
   }
 
   private apiUrl = 'http://localhost:8080/home/customer/delete'; // Update this with your Spring Boot DELETE endpoint
@@ -32,5 +32,8 @@ export class AdminService {
     return this.httpClient.get<Customer[]>('http://localhost:8080/home/AllCustomerDetails');
   }
 
-
+  getCustomerById(customerId: number) {
+    return this.httpClient.get('http://localhost:8080/home/customer/'+customerId);
+  
+  }
 }
