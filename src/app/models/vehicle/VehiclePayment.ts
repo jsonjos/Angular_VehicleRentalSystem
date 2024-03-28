@@ -1,7 +1,7 @@
 export class VehiclePayment {
     constructor(
-       public bookingId?:number,
-    public noOfDays?: number,
-    public customerAccountId?:number){
+      public bookingId?:number,
+      public noOfDays?: number,
+      public customerAccountId?:number){
     }
   }

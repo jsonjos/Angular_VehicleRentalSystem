@@ -7,6 +7,12 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ActiveVehiclesComponent } from './components/active-vehicles/active-vehicles.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { ReturnVehiclesComponent } from './components/return-vehicles/return-vehicles.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminlandingComponent } from './components/adminlanding/adminlanding.component';
+import { AddvehicleComponent } from './components/addvehicle/addvehicle.component';
+import { LinkaccountComponent } from './components/linkaccount/linkaccount.component';
+import { DeactivateAccountComponent } from './components/deactivate-account/deactivate-account.component';
+import { ViewbookingsComponent } from './components/viewbookings/viewbookings.component';
 
 
 const routes: Routes = [
@@ -16,7 +22,13 @@ const routes: Routes = [
   {path:'home',component:CarouselComponent},
   {path:'landing/customer/vehicles/active',component:ActiveVehiclesComponent},
   {path:'landing/customer/vehicles/return',component:ReturnVehiclesComponent},
-  {path:'landing/customer/vehicles/active/payment',component:BookingComponent},
+  {path:'payment',component:BookingComponent},
+  {path:'login/admin',component:AdminComponent},
+  {path:'landing/admin',component:AdminlandingComponent},
+  {path:'landing/admin/vehicle/post',component:AddvehicleComponent},
+  {path:'landing/customer/link',component:LinkaccountComponent},
+  {path:'landing/customer/deactivate',component:DeactivateAccountComponent},
+  {path:'landing/customer/view/bookings',component:ViewbookingsComponent}
 
 ];
 

@@ -17,11 +17,13 @@ export class ReturnVehiclesComponent {
         next:(data) =>{
           console.log(data);
           this.vehicleReturn=data;
-          // this.router.navigateByUrl("landing/customer");
+          alert("Vehicle returned successfully");
+          this.router.navigateByUrl("landing/customer");
         },
         error:(err) => {
           console.log(err);
-          // alert(err.error);
+          alert(err.error);
+          this.router.navigateByUrl("landing/customer");
 
         },
         complete:()=>{

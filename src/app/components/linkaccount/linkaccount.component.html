@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Link Your Account</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="accountId" class="form-label">Bank Account Number:</label>
+                            <input type="email" class="form-control" id="accountId" name="accountId" placeholder="Enter your Account Number" [(ngModel)]="bankCredentials.bankId">
+                        </div>
+                        <div class="mb-3">
+                            <label for="accountPassword" class="form-label">Bank Password</label>
+                            <input type="password" class="form-control" id="accountPassword" name="accountPassword" placeholder="Enter your bank password" [(ngModel)]="bankCredentials.bankPassword">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="text-center">
+                        <button type="submit" class="btn btn-info" (click)="link()">Login</button>
+                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

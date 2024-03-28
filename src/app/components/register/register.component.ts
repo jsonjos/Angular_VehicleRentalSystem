@@ -15,14 +15,18 @@ this.customerService.registerCustomer(this.newCustomer).subscribe(
   {
     next:(data) =>{
       console.log(data);
-          console.log("Register User Successful!");
-          alert("Registration Successful. Redirecting to Login page..")
+      console.log("Register User Successful!");
+      // alert("Registration Successful. Redirecting to Login page..")
+      // setTimeout(() => {
+        // alert("Registration Successful. Redirecting to Login page..")
           this.router.navigateByUrl("login/customer");
+          // this.router.navigate(['/login']);
+      // }, 1000);
+          // this.router.navigateByUrl("login/customer");
     },
     error:(err) => {
       console.log(err);
       alert(err.error);
-
     }
   }
 );
