@@ -1,0 +1,29 @@
+
+<div *ngIf="customers.length; else noData">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{ customer.customerId }}</td>
+          <td>{{ customer.customerName }}</td>
+          <td>{{ customer.customerEmail }}</td>
+          <td>{{ customer.customerPassword }}</td>
+          <td>
+            <button (click)="handleDeleteCustomer(customer.customerId)">Delete</button>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noData>
+    <p>No customers to display.</p>
+  </ng-template>
+  

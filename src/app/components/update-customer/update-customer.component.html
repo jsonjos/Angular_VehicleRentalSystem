@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center">UPDATE Customer</h5>
+                    <form (ngSubmit)="updateCustomer()">
+                        <div class="mb-3">
+                          <label for="customerName" class="customerName">Customer Name</label>
+                          <input type="text" class="form-control" id="customerName" [(ngModel)]="customer.customerName" name="customerName" placeholder="customerName" aria-describedby="basic-addon2">
+                        </div>
+                      
+                        <div class="mb-3">
+                          <label for="customerEmail" class="form-label">Customer Email</label>
+                          <input type="email" class="form-control" id="customerEmail" [(ngModel)]="customer.customerEmail" name="customerEmail" placeholder="name@gmail.com" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                      
+                        <div class="mb-3">
+                          <label for="customerPassword" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="customerPassword" [(ngModel)]="customer.customerPassword" name="customerPassword" placeholder="Password">
+                        </div>
+                      
+                        <button type="submit" class="btn btn-primary">UPDATE</button>
+                      </form>
+                      <div *ngIf="showMessage" class="alert alert-success" role="alert">
+                        {{ successMessage }}
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

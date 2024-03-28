@@ -1,43 +1,98 @@
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
 <body>
-    <div class="col-lg-12">
-        <p>      </p>
-    </div>
-    <div class="row lg-12">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title"><b>Add vehicle</b></h5>
-                    <br>
-                    <p class="card-text">Inserting the vehicle details</p>
-                    <br>
-                    <a routerLink="vehicle/post" class="btn btn-success">Insert</a>
-                </div>
-            </div>
-        </div>
+    <div class="row lg-5">
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><b>Update Vehicles</b></h5>
-                    <br>
-                    <p class="card-text">Update the existing vehicle</p>
-                    <br>
-                    <a routerLink="home" class="btn btn-success">Update</a>
+                    <h5 class="card-title">Add Customer</h5>
+                    <p class="card-text">Add a new Customer</p>
+                    <a routerLink="customer/add" class="btn btn-primary">ADD</a>
                 </div>
             </div>
-        </div> 
-        <div class="col-lg-12">
-            <p>        </p>
         </div>
+        
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><b>List Customers</b></h5>
-                    <br>
-                    <p class="card-text">Listing All the Registered Customers.</p>
-                    <br>
-                    <a routerLink="home" class="btn btn-info">List</a>
+                    <h5 class="card-title">Update Customer</h5>
+                    <p class="card-text">Update Customer details</p>
+                    <a routerLink="customer/update" class="btn btn-success">Update</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Delete Customer</h5>
+                    <p class="card-text">Delete Customer Permanently</p>
+                    <a routerLink="customer/delete" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Get All Customers</h5>
+                    <p class="card-text">View list of all Customers</p>
+                    <a routerLink="customer/view" class="btn btn-danger">ViewAll</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add Vehicle</h5>
+                    <p class="card-text">Add a new vehicle</p>
+                    <a routerLink="vehicle/add" class="btn btn-primary">ADD</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">View Vehicle</h5>
+                    <p class="card-text">View list of vehicles</p>
+                    <a routerLink="vehicle/view" class="btn btn-info">VIEWALL</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Update Vehicle</h5>
+                    <p class="card-text">Update Vehicle details</p>
+                    <a routerLink="vehicle/update" class="btn btn-success">UPDATE</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Delete Vehicle</h5>
+                    <p class="card-text">Delete Vehicle Permanently</p>
+                    <a routerLink="vehicle/delete" class="btn btn-danger">DELETE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">View Active Vehicle</h5>
+                    <p class="card-text">View active vehicles</p>
+                    <a routerLink="vehicles/active" class="btn btn-secondary">VIEWACTIVE</a>
                 </div>
             </div>
         </div>

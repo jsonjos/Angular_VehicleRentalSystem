@@ -14,13 +14,21 @@ import { CustomerlandingComponent } from './components/customerlanding/customerl
 import { ActiveVehiclesComponent } from './components/active-vehicles/active-vehicles.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { ReturnVehiclesComponent } from './components/return-vehicles/return-vehicles.component';
-import { AdminComponent } from './components/admin/admin.component';
+
 import { AdminlandingComponent } from './components/adminlanding/adminlanding.component';
 import { AddvehicleComponent } from './components/addvehicle/addvehicle.component';
 import { LinkaccountComponent } from './components/linkaccount/linkaccount.component';
 import { ViewprofileComponent } from './components/viewprofile/viewprofile.component';
 import { DeactivateAccountComponent } from './components/deactivate-account/deactivate-account.component';
 import { ViewbookingsComponent } from './components/viewbookings/viewbookings.component';
+import { AddCustomerComponent } from './components/add-customer/add-customer.component';
+import { UpdateCustomerComponent } from './components/update-customer/update-customer.component';
+import { DeleteCustomerComponent } from './components/delete-customer/delete-customer.component';
+import { ViewCustomersComponent } from './components/view-customers/view-customers.component';
+import { UpdateVehiclesComponent } from './components/update-vehicles/update-vehicles.component';
+import { ViewVehiclesComponent } from './components/view-vehicles/view-vehicles.component';
+import { DeleteVehicleComponent } from './components/delete-vehicle/delete-vehicle.component';
+import { AdminActiveVehiclesComponent } from './components/admin-active-vehicles/admin-active-vehicles.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +42,20 @@ import { ViewbookingsComponent } from './components/viewbookings/viewbookings.co
     ActiveVehiclesComponent,
     BookingComponent,
     ReturnVehiclesComponent,
-    AdminComponent,
     AdminlandingComponent,
     AddvehicleComponent,
     LinkaccountComponent,
     ViewprofileComponent,
     DeactivateAccountComponent,
-    ViewbookingsComponent
+    ViewbookingsComponent,
+    AddCustomerComponent,
+    UpdateCustomerComponent,
+    DeleteCustomerComponent,
+    ViewCustomersComponent,
+    UpdateVehiclesComponent,
+    ViewVehiclesComponent,
+    DeleteVehicleComponent,
+    AdminActiveVehiclesComponent
   ],
   imports: [
     BrowserModule,
