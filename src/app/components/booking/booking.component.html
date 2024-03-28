@@ -1,26 +1,32 @@
+
+<div>
+    <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif;">PAYMENT INFO:</h3>
+    <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 15px;">Number of days: {{newVehiclePayment.noOfDays}}</p>
+    <hr style="background-color: black;">
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card mt-5">
                 <div class="card-body">
-                    <h5 class="card-title text-center">payment</h5>
+                    <h3 class="card-title text-center">Payment</h3>
                     <form>
                         <div class="mb-3">
-                            <label for="accountId" class="form-label">accountId</label>
+                            <label for="accountId" class="form-label">AccountId</label>
                             <input type="number" class="form-control" id="accountId" name="accountId"  placeholder="Enter accountId" [(ngModel)]="newVehiclePayment.customerAccountId">
                         </div>
-                        <div class="mb-3">
-                            <label for="bookingId" class="form-label">bookingId</label>
+                        <!-- <div class="mb-3">
+                            <label for="bookingId" class="form-label">BookingId</label>
                             <input type="number" class="form-control" id="bookingId" name="bookingId" placeholder="Enter bookingId" [(ngModel)]="newVehiclePayment.bookingId">
-                        </div>
+                        </div> -->
                         <div class="mb-3">
-                            <label for="noOfDays" class="form-label">no of Days</label>
+                            <label for="noOfDays" class="form-label">No of Days</label>
                             <input type="number" class="form-control" id="noOfDays" name="noOfDays" placeholder="Enter noOfDays" [(ngModel)]="newVehiclePayment.noOfDays">
                         </div>
                         <br>
                         <br>
                         <div class="text-center">
-                        <button type="submit" class="btn btn-info" (click)="payment()">Register</button>
+                        <button type="submit" class="btn btn-info" (click)="payment()">Pay</button>
                          </div>
                     </form>
                 </div>
@@ -28,5 +34,6 @@
         </div>
     </div>
 </div>
+
 
 

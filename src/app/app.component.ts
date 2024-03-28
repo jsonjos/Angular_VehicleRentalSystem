@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vehicle-rental-system'
+  constructor(){
+    var customerid=localStorage.getItem("customerId");
+    const customerid1=localStorage.getItem("customerId");
+  }
 }

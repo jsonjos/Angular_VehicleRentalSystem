@@ -1,9 +1,11 @@
-export class VehicleModule { 
+export class Vehicle { 
   public vehicleId?:number;
+  public modelName?:string;
+  public modelYear?:string;
+  public isAvailable?:boolean;
   public rent?:number;
   public vehicleLocation?:string;
-  public isAvailable?:boolean;
-  public modelYear?:string;
-  public modelName?:string;
+ 
+
 
 }

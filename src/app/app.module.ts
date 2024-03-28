@@ -14,8 +14,13 @@ import { CustomerlandingComponent } from './components/customerlanding/customerl
 import { ActiveVehiclesComponent } from './components/active-vehicles/active-vehicles.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { ReturnVehiclesComponent } from './components/return-vehicles/return-vehicles.component';
-
-
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminlandingComponent } from './components/adminlanding/adminlanding.component';
+import { AddvehicleComponent } from './components/addvehicle/addvehicle.component';
+import { LinkaccountComponent } from './components/linkaccount/linkaccount.component';
+import { ViewprofileComponent } from './components/viewprofile/viewprofile.component';
+import { DeactivateAccountComponent } from './components/deactivate-account/deactivate-account.component';
+import { ViewbookingsComponent } from './components/viewbookings/viewbookings.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,14 @@ import { ReturnVehiclesComponent } from './components/return-vehicles/return-veh
     CustomerlandingComponent,
     ActiveVehiclesComponent,
     BookingComponent,
-    ReturnVehiclesComponent
+    ReturnVehiclesComponent,
+    AdminComponent,
+    AdminlandingComponent,
+    AddvehicleComponent,
+    LinkaccountComponent,
+    ViewprofileComponent,
+    DeactivateAccountComponent,
+    ViewbookingsComponent
   ],
   imports: [
     BrowserModule,
