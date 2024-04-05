@@ -24,8 +24,8 @@ export class AdminService {
   }
 
   private apiUrl = 'http://localhost:8080/home/customer/delete'; // Update this with your Spring Boot DELETE endpoint
-  deleteResource(id: number) {
-    return this.httpClient.delete(`${this.apiUrl}/${id}`, { responseType: 'text', observe: 'response' });
+  deleteResource(id: number) :Observable<any>{
+    return this.httpClient.delete(`http://localhost:8080/home/customer/delete/${id}`, {responseType:'text'});
   }
 
   getAllCustomers(): Observable<Customer[]> {

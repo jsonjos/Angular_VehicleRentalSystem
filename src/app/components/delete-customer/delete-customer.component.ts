@@ -14,19 +14,14 @@ import { AdminService } from 'src/app/services/admin.service';
     constructor(private adminService: AdminService) {}
   
     deleteCustomer() {
-      this.adminService.deleteResource(this.customerId).
-      subscribe({
+      this.adminService.deleteResource(this.customerId).subscribe({
         next: (response) => {
-          // Assuming the response body is the success message
-          this.successMessage = response.body || 'Customer deleted successfully';
-          console.log(response.body);
-          //this.router.navigate(['landing/admin']);
+          console.log('Customer deleted successfully', response);
+          this.successMessage = response.body || 'Customer updated successfully';
+          
         },
-        error: (error) => {
-          console.error('Error deleting customer:', error);
-        }
-    }
-    );
+        error: (error) => console.error('There was an error!', error)
+      });
         
     }
   }
